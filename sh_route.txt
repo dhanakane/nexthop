@@ -1,0 +1,11 @@
+1.0.0.0/30 is subnetted, 4 subnets
+ C    1.1.1.0 is directly connected, FastEthernet0/1
+ O    1.1.1.4 [110/2] via 1.1.1.2, 00:10:04, FastEthernet0/1
+ O    1.1.1.8 [110/2] via 1.1.1.13, 00:10:04, FastEthernet0/0
+ C    1.1.1.12 is directly connected, FastEthernet0/0
+172.16.0.0/24 is subnetted, 4 subnets
+ C    172.16.0.0 is directly connected, Ethernet0/0/0
+ O    172.16.1.0 [110/11] via 1.1.1.2, 00:10:04, FastEthernet0/1
+ O    172.16.2.0 [110/12] via 1.1.1.13, 00:09:24, FastEthernet0/0
+ O    172.16.2.0 [110/12] via 1.1.1.2, 00:09:24, FastEthernet0/1
+ O    172.16.3.0 [110/11] via 1.1.1.13, 00:10:04, FastEthernet0/0

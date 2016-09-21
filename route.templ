@@ -1,0 +1,10 @@
+Value Filldown SUPERNET (\S+)
+Value SUBNET (\d+.\d+.\d+.\d+)
+Value NEXT_HOP (\d+.\d+.\d+.\d+)
+
+Start
+  ^${SUPERNET} is subnetted, 4 subnets -> Record
+  ^\s\S\s+${SUBNET} is directly connected.* -> Record
+  ^\s\S\s+${SUBNET} \S+ via ${NEXT_HOP},.* -> Record
+  #^\s\S\s+${SUBNET} [\d+\/\d+] via ${NEXT_HOP}.*
+  #^\s\S\s+${SUBNET} is directly connected.*
